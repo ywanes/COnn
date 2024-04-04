@@ -14,7 +14,7 @@ public class COnn {
     public void go(){   
         try{
             // cd C:\tmp\tmp_teste && xcopy "D:\NetBeansProjects2\teste\src" . /h /i /c /k /e /r /y && y cls && javac teste.java && native-image teste --no-fallback && teste
-            String access="login@server";
+            String access="ywanes@192.168.0.100";
             File f=new java.io.File("..\\key.txt");
             if ( f.exists() && f.isFile() )
                 access=lendo_arquivo_ofuscado(f.getAbsolutePath());
