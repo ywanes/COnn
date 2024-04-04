@@ -1,3 +1,7 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+
 public class COnn {
     public static void main(String[] args) {
         try{    
@@ -10,7 +14,11 @@ public class COnn {
     public void go(){   
         try{
             // cd C:\tmp\tmp_teste && xcopy "D:\NetBeansProjects2\teste\src" . /h /i /c /k /e /r /y && y cls && javac teste.java && native-image teste --no-fallback && teste
-            ssh(new String[]{"ssh","ywanes,senha@192.168.0.100"});
+            String access="login@server";
+            File f=new java.io.File("..\\key.txt");
+            if ( f.exists() && f.isFile() )
+                access=lendo_arquivo_ofuscado(f.getAbsolutePath());
+            ssh(new String[]{"ssh",access});
         }catch(Exception e){
           System.out.println(e);
         }
@@ -91,6 +99,25 @@ public class COnn {
                 break;
             }
         }
-    }    
+    }
+    
+    public static String lendo_arquivo_ofuscado(String caminho) {
+        String result="";
+        String strLine;
+        try{
+            BufferedReader in=new BufferedReader(new FileReader(caminho));
+            while ((strLine = in.readLine()) != null)   {
+                if ( !result.equals("") )
+                    result+="\n";
+                result+=strLine;
+            }
+        }catch (Exception e){}
+        int [] ofuscado = new int[]{152,143,254,408,149,261,354,281,131,134,274,439,352};
+        String result2 = "";
+        for ( int i=0;i<ofuscado.length;i++ )
+            result2+=result.substring(ofuscado[i],ofuscado[i]+1);
+        return result2+"@192.168.0.100";
+    }
+
 }
 
