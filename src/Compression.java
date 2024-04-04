@@ -1,5 +1,3 @@
-
-
 public class Compression{
   static public final int INFLATER=0;
   static public final int DEFLATER=1;    

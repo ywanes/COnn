@@ -1,4 +1,3 @@
-
 import java.security.MessageDigest;
 
 public class HASHSHA384 implements HASH {

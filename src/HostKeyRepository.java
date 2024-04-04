@@ -1,5 +1,3 @@
-
-
 public interface HostKeyRepository{
   final int OK=0;
   final int NOT_INCLUDED=1;

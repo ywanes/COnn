@@ -1,5 +1,2 @@
-
-
 public class SocketFactory {
-    
 }

@@ -1,5 +1,3 @@
-
-
 public class HostKey{
 
   private static final byte[][] names = {

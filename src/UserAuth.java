@@ -1,5 +1,3 @@
-
-
 public abstract class UserAuth{
   protected static final int SSH_MSG_USERAUTH_REQUEST=               50;
   protected static final int SSH_MSG_USERAUTH_FAILURE=               51;

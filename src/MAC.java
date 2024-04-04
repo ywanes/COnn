@@ -1,5 +1,3 @@
-
-
 public interface MAC{
   String getName();
   int getBlockSize(); 

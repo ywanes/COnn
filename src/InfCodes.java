@@ -1,5 +1,3 @@
-
-
 final class InfCodes{
 
   static final private int[] inflate_mask = {

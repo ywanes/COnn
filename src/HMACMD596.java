@@ -1,5 +1,3 @@
-
-
 public class HMACMD596 extends HMACMD5 {
   public HMACMD596(){
     name="hmac-md5-96";
