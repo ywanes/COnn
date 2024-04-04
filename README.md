@@ -4,6 +4,6 @@ Work in GraalVM
 
 .
 
-Fork of JSch-0.1.55 -> See LICENSE_FORKED
+Fork of JSch-0.1.55 -> See [LICENSE_FORKED](LICENSE_FORKED)
 
 Ref. http://www.jcraft.com/jsch/
