@@ -4,6 +4,6 @@ Work in GraalVM
 
 .
 
-Forked -> ymnk, JCraft,Inc -> See LICENSE_FORKED
+Fork of JSch-0.1.55 -> See LICENSE_FORKED
 
 Ref. http://www.jcraft.com/jsch/
