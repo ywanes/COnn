@@ -1,4 +1,4 @@
-[COnn](/).. SSH SCP execSSH SFTP java
+[COnn](/) -> SSH SCP execSSH SFTP java
 <br/>
 <br/>
 Work in [GraalVM](https://www.graalvm.org/latest/docs/getting-started/)
